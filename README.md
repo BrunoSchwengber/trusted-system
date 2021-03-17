@@ -6,9 +6,9 @@ SCHWENGBER, Bruno Henrique; LIMA, Michele Nogueira. Um Sistema para Detecção N
 
 Install all python libraries in requirements.txt
 
-'''
+```
 pip install requirements.txt
-''' 
+``` 
 
 
 ## Code
@@ -24,8 +24,11 @@ The system has 6 parameters and follow the instructions given below.
 
 **Command line instructions:**
 
-* python trusted.py dataset_name window_size new_data_percentage AUC_threshold (sample: python trusted.py datasets/botnet_2014.csv 100 0.1 0.7 botnet_2014labels.csv)
-
+* python trusted.py dataset_name window_size new_data_percentage AUC_threshold 
+* sample: 
+```
+python trusted.py datasets/botnet_2014.csv 100 0.1 0.7 botnet_2014labels.csv
+```
 
 **The code will output:** 
 * Final accuracy, precision, recall and f-score

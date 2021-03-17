@@ -1,0 +1,1 @@
+tshark.exe -r dump.eth0.1059726000.pcap -R "ip.addr eq 12.129.71.102" -w defcon11_tshark_filtered.pcap
