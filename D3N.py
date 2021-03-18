@@ -52,7 +52,7 @@ def drift_detector(S,T,threshold):
         return False
 
 
-class D3():
+class D3N():
     def __init__(self, w, rho, dim, auc):
         self.size = int(w*(1+rho))
         self.win_data = np.zeros((self.size,dim))

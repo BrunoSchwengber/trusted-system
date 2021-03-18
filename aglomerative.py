@@ -11,7 +11,7 @@ from sklearn.metrics import confusion_matrix, precision_recall_fscore_support, c
 from sklearn import metrics
 import sys
 
-class AGLO():
+class HAC():
 
 	def __init__(self, dist, thresh):
 		self.DISTANCIA = dist

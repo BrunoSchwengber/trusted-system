@@ -5,9 +5,9 @@ import sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from D3 import D3
+from D3N import D3N
 from statistics import mean
-from aglomerative import AGLO
+from aglomerative import HAC
 from sklearn.preprocessing import MinMaxScaler
 from skmultiflow.data.data_stream import DataStream
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, classification_report
@@ -56,13 +56,13 @@ distance= float(sys.argv[6])
 
 SIMILARIDADE=(distance*0.005)
 
-stream_clf = AGLO(distance, SIMILARIDADE)
+stream_clf = HAC(distance, SIMILARIDADE)
 
 w = int(sys.argv[2])
 rho = float(sys.argv[3])
 auc = float(sys.argv[4])
 
-D3_win = D3(w,rho,stream.n_features,auc)
+D3_win = D3N(w,rho,stream.n_features,auc)
 stream_acc = []
 stream_record = []
 stream_true= 0
