@@ -21,13 +21,14 @@ The system has 6 parameters and follow the instructions given below.
 * 3º new data percentage
 * 4º threshold for AUC
 * 5º input dataset labels
+* 6º clustering distance
 
 **Command line instructions:**
 
-* python trusted.py dataset_name window_size new_data_percentage AUC_threshold 
+* python trusted.py dataset_name window_size new_data_percentage AUC_threshold clustering_distance
 * sample: 
 ```
-python trusted.py datasets/botnet_2014.csv 100 0.1 0.7 botnet_2014labels.csv
+python trusted.py datasets/botnet_2014.csv 100 0.1 0.7 botnet_2014labels.csv 0.1
 ```
 
 **The code will output:** 
