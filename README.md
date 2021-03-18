@@ -35,3 +35,14 @@ python trusted.py datasets/botnet_2014.csv 100 0.1 0.7 botnet_2014labels.csv
 * Total elapsed time (from beginning of the stream to the end)
 * A accuracy plot (dividing data stream into 30 chunks)
 * A file containing the evaluation final results
+
+# Datasets
+
+* Botnet 2014 
+```
+https://www.unb.ca/cic/datasets/botnet.html
+```
+* CTU-13
+```
+https://www.stratosphereips.org/datasets-ctu13
+```
